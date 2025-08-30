@@ -3,7 +3,11 @@ from .import views
 
 urlpatterns = [
     path('job/', views.Job_posting),
-    # path('dt/', views.Job_see),
+    path('get/', views.getjobs),
+
     
 ]
-#   have to add new urls
+
+
+# ADMIN : = anand 
+# pass  : = 1234

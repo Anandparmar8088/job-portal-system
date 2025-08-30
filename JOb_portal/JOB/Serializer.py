@@ -6,3 +6,4 @@ class jobserializers(ModelSerializer):
     class Meta:
         model = Job
         fields = "__all__"
+

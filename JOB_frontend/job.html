@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Job</title>
+  <link rel="stylesheet" href="job.css">
+</head>
+<body>
+  <nav>
+   <a href="./Home.html"><img src="" alt="Logo"></a>  
+    <div id="searchbar">
+      <input type="text" placeholder="Search jobs...">
+      <button>Search</button>
+    </div>
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Interested</a></li>
+      <li><a href="./job.html">Add Jobs</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <h1>Job Posting Form</h1>
+
+    <form id="jobForm" class="job-form">
+      <label for="job_title">Job Title</label>
+      <input type="text" id="job_title" required>
+
+      <label for="job_description">Job Description</label>
+      <textarea id="job_description" rows="5" required></textarea>
+
+      <label for="contact_info">Contact Email</label>
+      <input type="email" id="contact_info" required>
+
+      <button type="submit">Post Job</button>
+    </form>
+
+    <div id="responseBox"></div>
+  </div>
+
+  <script src="job.js"></script>
+</body>
+</html>

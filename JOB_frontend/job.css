@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1B4332; /* Dark Forest Green */
+  padding: 1rem 2rem;
+  color: white;
+  height: 70px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav img {
+  height: 40px;
+  width: 40px;
+  background: #f1ebeb;
+  border-radius: 4px;
+}
+
+#searchbar {
+  display: flex;
+  gap: 8px;
+}
+
+#searchbar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 260px;
+}
+
+#searchbar button {
+  padding: 8px 16px;
+  background: #2D6A4F; /* Fresh Green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#searchbar button:hover {
+  background: #40916C; /* Medium Green */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;           
+}
+
+nav ul li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main Container */
+.container {
+  margin-top: 100px; /* push below navbar */
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Form */
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-form label {
+  font-weight: bold;
+}
+
+.job-form input,
+.job-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.job-form input:focus,
+.job-form textarea:focus {
+  border-color:#1B4332;
+  box-shadow: 0 0 5px rgba(0,123,255,0.4);
+}
+
+/* Button */
+.job-form button {
+  background:#2D6A4F;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.job-form button:hover {
+  background:#1B4332;
+}
+
+/* Response Box */
+#responseBox {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
